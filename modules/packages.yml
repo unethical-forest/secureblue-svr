@@ -1,0 +1,49 @@
+type: rpm-ostree
+
+repos:
+  - atim/starship
+  - trixieua/mutter-patched
+
+install:
+  - starship
+  - wireguard-tools # VPN server connectivity
+
+  # Container tools
+  - buildah
+  - podman
+  - skopeo
+  - kernel-modules-extra
+
+  # Compilers, Languages & Core Runtimes
+  - clang
+  - php-composer
+  - gcc
+  - golang # Fedora package providing the Go compiler (gcc-go alternative)
+  - rust # Core Rust compiler toolchain
+  - cargo # Rust dependency manager
+
+  # Modern CLI Tools, Shells & Ecosystem
+  - curl
+  - distrobox
+  - gh # Official Fedora package name for the github-cli
+  - fzf
+  - jq
+  - yq
+  - fd-find # Official Fedora package name for 'fd'
+  - eza
+  - zoxide
+  - ripgrep
+  - tealdeer
+  - bat
+  - zsh
+  - zellij
+  - tmux
+  - nvtop # Included for tracking local Nvidia hardware metrics
+  - wget
+
+  - alacritty
+
+remove:
+  - alacritty
+  - firefox
+  - firefox-langpacks

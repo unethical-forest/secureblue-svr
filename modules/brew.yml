@@ -1,0 +1,8 @@
+type: brew
+
+auto-update: false
+auto-upgrade: false
+direct-pull: true
+
+brew-analytics: false # disable telemetry
+nofile-limits: true # increase nofile limits
