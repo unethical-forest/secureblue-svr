@@ -9,10 +9,10 @@ base-image: ghcr.io/secureblue/securecore-nvidia-open-hardened
 image-version: latest
 
 modules:
-  - from-file: packages.yml
-  - from-file: fonts.yml
-  - from-file: brew.yml
-  - from-file: additional-packages.yml
+  - from-file: ../modules/packages.yml
+  - from-file: ../modules/fonts.yml
+  - from-file: ../modules/brew.yml
+  - from-file: ../modules/additional-packages.yml
   - type: signing
 
 nushell-version: none
